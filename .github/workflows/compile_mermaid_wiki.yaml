@@ -1,10 +1,7 @@
 name: 'Compile Mermaid'
 
 on:
-  push:
-    paths:
-      # Trigger only when wiki directory changes
-      - 'wiki/**'
+  gollum
 
 jobs:
   build:
