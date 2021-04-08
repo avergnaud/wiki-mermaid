@@ -6,6 +6,8 @@ il faut avoir un répertoire `output/` non vide...
 
 [à propos du GITHUB_TOKEN](https://docs.github.com/en/actions/reference/authentication-in-a-workflow)
 
+[PB](https://githubmemory.com/repo/yaSebastian/mermaid-markdown-test/issues)
+
 ## exemple
 
 Here is an inline mermaid file
