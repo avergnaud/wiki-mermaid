@@ -6,12 +6,16 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: ./wiki_tmp
 
     steps:
       - uses: actions/checkout@v2
         with:
           fetch-depth: 2
           repository: ${{github.repository}}.wiki
+          working-directory: ./wiki_tmp
       - name: get changed files
         id: getfile
         run: |
@@ -26,6 +30,7 @@ jobs:
         with:
           files: ${{ steps.getfile.outputs.files }}
           output: 'output'
+          working-directory: ./wiki_tmp
         env:
           HIDE_CODEBLOCKS: 1
           ABSOLUTE_IMAGE_LINKS: 1
@@ -47,3 +52,4 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           repository: ${{github.repository}}.wiki
+          working-directory: ./wiki_tmp
