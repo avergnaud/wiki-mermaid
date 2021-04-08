@@ -33,14 +33,10 @@ jobs:
           OUTPUT_FILE_TYPE: "svg"
 
       - name: show changes
-        with:
-          repository: ${{github.repository}}.wiki
         run: |
           git status
 
       - name: Commit files
-        with:
-          repository: ${{github.repository}}.wiki
         run: |
           git add .
           git config --local user.email "action@github.com"
