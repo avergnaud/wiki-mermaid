@@ -25,7 +25,7 @@ graph TD;
     C-->D;
     W-->D;
     E-->S;
-    E-->T;
+    S-->T;
 ```
 
 </details>
