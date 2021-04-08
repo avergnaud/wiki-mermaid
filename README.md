@@ -15,7 +15,7 @@ Lors d'un push, si les graphes mermaid n'ont pas bougé, alors le step **Commit 
 nothing to commit, working tree clean
 Error: Process completed with exit code 1.
 ```
-La GitHub action ne push rien.
+et la GitHub action ne push rien.
 
 On peut aussi faire une GitHub action qui génère une PR avec les modifications,
 cf [https://github.com/marketplace/actions/compile-mermaid-markdown#sample-workflow-with-automated-pr](https://github.com/marketplace/actions/compile-mermaid-markdown#sample-workflow-with-automated-pr)
@@ -36,7 +36,7 @@ graph TD;
     B-->D;
     C-->D;
     W-->D;
-    E-->U;
+    E-->V;
 ```
 
 </details>
