@@ -8,7 +8,16 @@ il faut avoir un répertoire `output/` non vide...
 
 [PB](https://githubmemory.com/repo/yaSebastian/mermaid-markdown-test/issues) résolu en ajoutant `git add .` dans le step  **Commit files** de l'action.
 
-Ici la GitHub action push directement les modifications dans le repo. On peut aussi faire une GitHub action qui génère une PR avec les modifications,
+Ici la GitHub action push directement les modifications dans le repo. 
+
+Lors d'un push, si les graphes mermaid n'ont pas bougé, alors le step **Commit files** tombe en erreur avec :
+```
+nothing to commit, working tree clean
+Error: Process completed with exit code 1.
+```
+La GitHub action ne push rien.
+
+On peut aussi faire une GitHub action qui génère une PR avec les modifications,
 cf [https://github.com/marketplace/actions/compile-mermaid-markdown#sample-workflow-with-automated-pr](https://github.com/marketplace/actions/compile-mermaid-markdown#sample-workflow-with-automated-pr)
 
 ## exemple
