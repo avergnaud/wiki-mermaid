@@ -2,7 +2,7 @@
 
 ## notes
 
-il faut avoir un répertoire `output/`
+il faut avoir un répertoire `output/` non vide...
 
 [à propos du GITHUB_TOKEN](https://docs.github.com/en/actions/reference/authentication-in-a-workflow)
 
@@ -23,7 +23,6 @@ graph TD;
     C-->D;
     W-->D;
     E-->S;
-    E-->C;
 ```
 
 </details>
