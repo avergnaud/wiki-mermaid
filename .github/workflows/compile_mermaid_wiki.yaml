@@ -4,8 +4,7 @@ on:
   push:
     paths:
       # Trigger only when wiki directory changes
-      - 'wiki/**/*.mermaid'
-      - 'wiki/**/*.md'
+      - 'wiki/**'
 
 jobs:
   build:
