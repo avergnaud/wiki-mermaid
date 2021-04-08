@@ -6,7 +6,10 @@ il faut avoir un répertoire `output/` non vide...
 
 [à propos du GITHUB_TOKEN](https://docs.github.com/en/actions/reference/authentication-in-a-workflow)
 
-[PB](https://githubmemory.com/repo/yaSebastian/mermaid-markdown-test/issues)
+[PB](https://githubmemory.com/repo/yaSebastian/mermaid-markdown-test/issues) résolu en ajoutant `git add .` dans le step  **Commit files** de l'action.
+
+Ici la GitHub action push directement les modifications dans le repo. On peut aussi faire une GitHub action qui génère une PR avec les modifications,
+cf [https://github.com/marketplace/actions/compile-mermaid-markdown#sample-workflow-with-automated-pr](https://github.com/marketplace/actions/compile-mermaid-markdown#sample-workflow-with-automated-pr)
 
 ## exemple
 
